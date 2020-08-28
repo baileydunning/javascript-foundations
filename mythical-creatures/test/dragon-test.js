@@ -3,17 +3,17 @@ var Dragon = require('../exercises/dragon');
 
 describe('Dragon', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Dragon);
   });
 
-  it.skip('should instantiate our good friend, Dragon', function() {
+  it('should instantiate our good friend, Dragon', function() {
     var smaug = new Dragon();
 
     assert.instanceOf(smaug, Dragon);
   });
 
-  it.skip('should have name', function() {
+  it('should have name', function() {
     var dragon1 = new Dragon('Jeff');
     var dragon2 = new Dragon('Louisa');
 
@@ -21,7 +21,7 @@ describe('Dragon', function() {
     assert.equal(dragon2.name, 'Louisa');
   });
 
-  it.skip('should have a rider', function() {
+  it('should have a rider', function() {
     var dragon = new Dragon('Saphira', 'Eragon');
 
     assert.equal(dragon.name, 'Saphira');
@@ -44,15 +44,15 @@ describe('Dragon', function() {
     var dragon = new Dragon('Lady Vox');
 
     dragon.eat();
-    
-    assert.equal(dragon.hungry, true);
-    
-    dragon.eat();
-    
+
     assert.equal(dragon.hungry, true);
 
     dragon.eat();
-    
+
+    assert.equal(dragon.hungry, true);
+
+    dragon.eat();
+
     assert.equal(dragon.hungry, false);
   });
 });
