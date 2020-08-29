@@ -28,19 +28,19 @@ describe('Dragon', function() {
     assert.equal(dragon.rider, 'Eragon');
   });
 
-  it.skip('should have a color', function() {
+  it('should have a color', function() {
     var dragon = new Dragon('Saphira', 'Eragon', 'blue');
 
     assert.equal(dragon.color, 'blue');
   });
 
-  it.skip('should start off being hungry', function() {
+  it('should start off being hungry', function() {
     var dragon = new Dragon('Josh');
 
     assert.equal(dragon.hungry, true);
   });
 
-  it.skip('should be full after eating 3 times', function() {
+  it('should be full after eating 3 times', function() {
     var dragon = new Dragon('Lady Vox');
 
     dragon.eat();
